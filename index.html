@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Module test</title>
+</head>
+<body>
+    <div id="homepage">
+        <div id="address">My Public IP Address:</div>
+        <button id="get-btn">Get Data</button>
+    </div>
+    <section id="user-details" style=" display: none ">
+        <div id="location-details">
+                <div>
+                    <p class="details">Latitude:</p>
+                    <p class="details">Longitude:</p>
+                </div>
+                <div>
+                    <p class="details">City:</p>
+                    <p class="details">Region:</p>
+                </div>
+                <div>
+                    <p class="details">Organisation:</p>
+                    <p class="details">Host Name:</p>
+                </div>
+        </div>
+        <div id="user-location"></div>
+        <div id="more-details">
+            <p class="details">Time Zone:</p>
+            <p class="details">Date and Time:</p>
+            <p class="details">Pincode:</p>
+            <p class="details"></p>
+        </div>
+        <div>
+            <input type="text" placeholder="filter" id="filter-bar">
+        </div>
+        <div id="postOffices-list">
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

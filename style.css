@@ -1,0 +1,107 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#homepage{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;gap: 20px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+#address{
+    font-weight: bolder;
+    font-size:x-large;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration:underline;
+}
+#get-btn{
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+}
+
+#location-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#location-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#user-location iframe{
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#more-details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#filter-bar{
+    width: 100%;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#postOffices-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#postOffice{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+#location-details p, #more-details p{
+    font-weight: bold;
+}
+
+#get-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 1200px) and (min-width: 800px){
+    #location-details{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #postOffices-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 800px) and (min-width: 500px){
+    #location-details{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #postOffices-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 500px){
+    #homepage{
+        align-items: flex-start;
+    }
+    #location-details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #postOffices-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
